@@ -199,7 +199,7 @@ a:hover {
 }
 
 .section {
-    padding: 100px 0;
+    padding: 6em 0;
 }
 
 /*
@@ -626,6 +626,9 @@ header .navbar-brand img {
     width: 90%;
     margin: auto;
 }
+.hotel-item{
+    animation-duration: 2s;
+}
 
 .hotel-item .card-body a:hover {
     color: var(--color-primary);
@@ -671,11 +674,6 @@ header .navbar-brand img {
 .hotel-item .card-footer .footer-bot .btn-hotel:hover {
     text-decoration: none;
     background-color: var(--color-green-blue);
-}
-
-.hotel-item hr {
-    width: 90%;
-    margin: auto;
 }
 
 .hotel .hotel-item:hover .icon {
