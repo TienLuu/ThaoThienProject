@@ -27,6 +27,8 @@
     --color-overlay: #2ebdc4;
     --color-green: #8FC43E;
     --color-green-blue: #3BA146;
+    --color-black-1: #171818;
+    --color-heading: #303233;
 
     --bg-light: #f8faff;
     --bg-footer: #212831;
@@ -222,7 +224,7 @@ a:hover {
 }
 
 .section {
-    padding: 100px 0;
+    padding: 6em 0;
 }
 
 /*
@@ -564,6 +566,10 @@ header .navbar-brand img {
     outline: none;
 }
 
+.owl-carousel:hover .owl-nav {
+    opacity: 1;
+}
+
 .owl-carousel:hover .owl-nav .owl-prev {
     left: -60px;
 }
@@ -739,6 +745,10 @@ header .navbar-brand img {
     margin: auto;
 }
 
+.hotel-item {
+    animation-duration: 2s;
+}
+
 .hotel-item .card-body a:hover {
     color: var(--color-primary);
 }
@@ -783,11 +793,6 @@ header .navbar-brand img {
 .hotel-item .card-footer .footer-bot .btn-hotel:hover {
     text-decoration: none;
     background-color: var(--color-green-blue);
-}
-
-.hotel-item hr {
-    width: 90%;
-    margin: auto;
 }
 
 .hotel .hotel-item:hover .icon {
