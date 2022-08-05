@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="data-theme">
 
 <head>
     <meta charset="UTF-8">
@@ -28,9 +28,11 @@
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/owl.theme.default.min.css">
 
-    <!-- SLICK CSS -->
-    <link rel="stylesheet" href="../css/slick.css">
-    <link rel="stylesheet" href="../css/slick-theme.css">
+    <!-- ANIMATE CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- WOW CSS -->
+    <link rel="stylesheet" href="../css/animate.css">
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="../css/style.css">
@@ -44,7 +46,7 @@
     <header id="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../index.html">
                     <img src="../Images/logo.png" alt="Logo Thảo Thiện Graden">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -54,7 +56,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link nav-menu active" href="#">Home</a>
+                            <a class="nav-link nav-menu active" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-menu" href="#">About</a>
@@ -66,7 +68,7 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="#">Hotel</a>
-                                <a class="dropdown-item" href="#">Restaurant</a>
+                                <a class="dropdown-item" href="./index.html">Restaurant</a>
                                 <a class="dropdown-item" href="#">Other1</a>
                             </div>
                         </li>
@@ -80,51 +82,26 @@
                             <a class="nav-link nav-menu" href="#">Carrers</a>
                         </li>
                     </ul>
+                    <div class="header__mode">
+                        <i class="fa-solid fa-moon mode-dark active"></i>
+                        <i class="fa-solid fa-sun mode-light"></i>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- ================ CAROUSEL =============== -->
-    <section id="carouselId" class="carousel carousel1 slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselId" data-slide-to="1"></li>
-            <li data-target="#carouselId" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <div class="carousel-caption container">
-                    <h1 class="animate__animated animate__fadeInUp animate__slow">
-                        <strong>Explore <br></strong>
-                        your amazing city
-                    </h1>
-                    <p class="animate__animated animate__fadeInUp animate__slow">
-                        Find great places to stay, eat, shop, or visit from local experts
-                    </p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-caption container">
-                    <h1 class="animate__animated animate__fadeInUp animate__slow">
-                        <strong>Explore <br></strong>
-                        your amazing city
-                    </h1>
-                    <p class="animate__animated animate__fadeInUp animate__slow">
-                        Find great places to stay, eat, shop, or visit from local experts
-                    </p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-caption container">
-                    <h1 class="animate__animated animate__fadeInUp animate__slow">
-                        <strong>Explore <br></strong>
-                        your amazing city
-                    </h1>
-                    <p class="animate__animated animate__fadeInUp animate__slow">
-                        Find great places to stay, eat, shop, or visit from local experts
-                    </p>
-                </div>
+    <!-- ================ BANNER =============== -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner__content">
+                <h1 class="wow animate__animated animate__fadeInUp" data-wow-duration="2s">
+                    <strong>Explore <br></strong>
+                    your amazing city
+                </h1>
+                <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
+                    Find great places to stay, eat, shop, or visit from local experts
+                </p>
             </div>
         </div>
     </section>
@@ -134,21 +111,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <div class="memories__left">
+                    <div class="memories__left wow animate__animated animate__fadeIn" data-wow-duration="4s">
                         <img src="../Images/memories.webp" alt="Thảo Thiện Restaurants">
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="memories__right">
-                        <h2 class="res-heading">
+                        <h2 class="res-heading wow animate__animated animate__fadeInUp" data-wow-delay="0.25s">
                             Memories made in food
                         </h2>
-                        <p>
+                        <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
                             Our eclectic menu reflects the wide variety of influences and experiences that inform our
                             approach to cooking. We don’t
                             just serve dishes, we serve memories.
                         </p>
-                        <button>Learn more</button>
+                        <div class="btn-style wow animate__animated animate__fadeInUp" data-wow-delay="0.75s">
+                            <button>Learn more</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -219,7 +198,7 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-3">
+            <div class="text-center mt-3 btn-style">
                 <button>See menu</button>
             </div>
         </div>
@@ -244,189 +223,265 @@
                     </li>
                 </ul>
             </div>
-            <div class="menu__content mt-3">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="menu__list">
-                            <div class="menu__item">
-                                <h3 class="text-center mt-3 mb-5">Combo 130k</h3>
-                                <div class="menu__option">
-                                    <div class="menu__detail">
-                                        <h5>Option 1</h5>
-                                        <ol>
-                                            <li>Mực xào dưa cà</li>
-                                            <li>Cá lóc kho tộ</li>
-                                            <li>Trứng chiên hành</li>
-                                            <li>Rau muống xào tỏi</li>
-                                            <li>Đậu hủ sốt thịt bằm</li>
-                                            <li>Canh soup nấu xương</li>
-                                            <li>Cơm trắng</li>
-                                            <li>Tráng miệng, trà đá</li>
-                                        </ol>
-                                    </div>
-                                    <div class="menu__detail">
-                                        <h5>Option 2</h5>
-                                        <ol>
-                                            <li>Mực xào dưa cà</li>
-                                            <li>Cá lóc kho tộ</li>
-                                            <li>Trứng chiên hành</li>
-                                            <li>Rau muống xào tỏi</li>
-                                            <li>Đậu hủ sốt thịt bằm</li>
-                                            <li>Canh soup nấu xương</li>
-                                            <li>Cơm trắng</li>
-                                            <li>Tráng miệng, trà đá</li>
-                                        </ol>
-                                    </div>
-                                    <div class="menu__detail">
-                                        <h5>Option 3</h5>
-                                        <ol>
-                                            <li>Mực xào dưa cà</li>
-                                            <li>Cá lóc kho tộ</li>
-                                            <li>Trứng chiên hành</li>
-                                            <li>Rau muống xào tỏi</li>
-                                            <li>Đậu hủ sốt thịt bằm</li>
-                                            <li>Canh soup nấu xương</li>
-                                            <li>Cơm trắng</li>
-                                            <li>Tráng miệng, trà đá</li>
-                                        </ol>
-                                    </div>
-                                    <div class="menu__detail">
-                                        <h5>Option 4</h5>
-                                        <ol>
-                                            <li>Mực xào dưa cà</li>
-                                            <li>Cá lóc kho tộ</li>
-                                            <li>Trứng chiên hành</li>
-                                            <li>Rau muống xào tỏi</li>
-                                            <li>Đậu hủ sốt thịt bằm</li>
-                                            <li>Canh soup nấu xương</li>
-                                            <li>Cơm trắng</li>
-                                            <li>Tráng miệng, trà đá</li>
-                                        </ol>
-                                    </div>
+            <div class="menu__content mt-5 pt-3">
+                <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-combo1-tab" data-toggle="pill" href="#pills-combo1"
+                            role="tab" aria-controls="pills-home" aria-selected="true">Combo 130k</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-combo2-tab" data-toggle="pill" href="#pills-combo2" role="tab"
+                            aria-controls="pills-profile" aria-selected="false">Combo 150k</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-combo3-tab" data-toggle="pill" href="#pills-combo3" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">Combo 160k</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-combo4-tab" data-toggle="pill" href="#pills-combo4" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">Combo 170k</a>
+                    </li>
+                </ul>
+                <div class="tab-content wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
+                    id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-combo1" role="tabpanel"
+                        aria-labelledby="pills-combo1-tab">
+                        <div class="menu__item mt-5">
+                            <div class="menu__option">
+                                <div class="menu__detail">
+                                    <h5>Option 1</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
                                 </div>
-                            </div>
-                            <div class="menu__item">
-                                <h3 class="text-center mb-5">Combo 150k</h3>
-                                <div class="menu__option">
-                                    <div class="menu__detail">
-                                        <h5>Option 1</h5>
-                                        <ol>
-                                            <li>Mực xào dưa cà</li>
-                                            <li>Cá lóc kho tộ</li>
-                                            <li>Trứng chiên hành</li>
-                                            <li>Rau muống xào tỏi</li>
-                                            <li>Đậu hủ sốt thịt bằm</li>
-                                            <li>Canh soup nấu xương</li>
-                                            <li>Cơm trắng</li>
-                                            <li>Tráng miệng, trà đá</li>
-                                        </ol>
-                                    </div>
-                                    <div class="menu__detail">
-                                        <h5>Option 2</h5>
-                                        <ol>
-                                            <li>Mực xào dưa cà</li>
-                                            <li>Cá lóc kho tộ</li>
-                                            <li>Trứng chiên hành</li>
-                                            <li>Rau muống xào tỏi</li>
-                                            <li>Đậu hủ sốt thịt bằm</li>
-                                            <li>Canh soup nấu xương</li>
-                                            <li>Cơm trắng</li>
-                                            <li>Tráng miệng, trà đá</li>
-                                        </ol>
-                                    </div>
-                                    <div class="menu__detail">
-                                        <h5>Option 3</h5>
-                                        <ol>
-                                            <li>Mực xào dưa cà</li>
-                                            <li>Cá lóc kho tộ</li>
-                                            <li>Trứng chiên hành</li>
-                                            <li>Rau muống xào tỏi</li>
-                                            <li>Đậu hủ sốt thịt bằm</li>
-                                            <li>Canh soup nấu xương</li>
-                                            <li>Cơm trắng</li>
-                                            <li>Tráng miệng, trà đá</li>
-                                        </ol>
-                                    </div>
-                                    <div class="menu__detail">
-                                        <h5>Option 4</h5>
-                                        <ol>
-                                            <li>Mực xào dưa cà</li>
-                                            <li>Cá lóc kho tộ</li>
-                                            <li>Trứng chiên hành</li>
-                                            <li>Rau muống xào tỏi</li>
-                                            <li>Đậu hủ sốt thịt bằm</li>
-                                            <li>Canh soup nấu xương</li>
-                                            <li>Cơm trắng</li>
-                                            <li>Tráng miệng, trà đá</li>
-                                        </ol>
-                                    </div>
+                                <div class="menu__detail">
+                                    <h5>Option 2</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
                                 </div>
-                            </div>
-                            <div class="menu__item">
-                                <h3 class="text-center mb-5">Combo 160k</h3>
-                                <div class="menu__option">
-                                    <div class="menu__detail">
-                                        <h5>Option 1</h5>
-                                        <ol>
-                                            <li>Mực xào dưa cà</li>
-                                            <li>Cá lóc kho tộ</li>
-                                            <li>Trứng chiên hành</li>
-                                            <li>Rau muống xào tỏi</li>
-                                            <li>Đậu hủ sốt thịt bằm</li>
-                                            <li>Canh soup nấu xương</li>
-                                            <li>Cơm trắng</li>
-                                            <li>Tráng miệng, trà đá</li>
-                                        </ol>
-                                    </div>
-                                    <div class="menu__detail">
-                                        <h5>Option 2</h5>
-                                        <ol>
-                                            <li>Mực xào dưa cà</li>
-                                            <li>Cá lóc kho tộ</li>
-                                            <li>Trứng chiên hành</li>
-                                            <li>Rau muống xào tỏi</li>
-                                            <li>Đậu hủ sốt thịt bằm</li>
-                                            <li>Canh soup nấu xương</li>
-                                            <li>Cơm trắng</li>
-                                            <li>Tráng miệng, trà đá</li>
-                                        </ol>
-                                    </div>
-                                    <div class="menu__detail">
-                                        <h5>Option 3</h5>
-                                        <ol>
-                                            <li>Mực xào dưa cà</li>
-                                            <li>Cá lóc kho tộ</li>
-                                            <li>Trứng chiên hành</li>
-                                            <li>Rau muống xào tỏi</li>
-                                            <li>Đậu hủ sốt thịt bằm</li>
-                                            <li>Canh soup nấu xương</li>
-                                            <li>Cơm trắng</li>
-                                            <li>Tráng miệng, trà đá</li>
-                                        </ol>
-                                    </div>
-                                    <div class="menu__detail">
-                                        <h5>Option 4</h5>
-                                        <ol>
-                                            <li>Mực xào dưa cà</li>
-                                            <li>Cá lóc kho tộ</li>
-                                            <li>Trứng chiên hành</li>
-                                            <li>Rau muống xào tỏi</li>
-                                            <li>Đậu hủ sốt thịt bằm</li>
-                                            <li>Canh soup nấu xương</li>
-                                            <li>Cơm trắng</li>
-                                            <li>Tráng miệng, trà đá</li>
-                                        </ol>
-                                    </div>
+                                <div class="menu__detail">
+                                    <h5>Option 3</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
+                                </div>
+                                <div class="menu__detail">
+                                    <h5>Option 4</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center mt-3">
-                            <button>See menu</button>
+                    </div>
+                    <div class="tab-pane fade" id="pills-combo2" role="tabpanel" aria-labelledby="pills-combo2-tab">
+                        <div class="menu__item mt-5">
+                            <div class="menu__option">
+                                <div class="menu__detail">
+                                    <h5>Option 1</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
+                                </div>
+                                <div class="menu__detail">
+                                    <h5>Option 2</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
+                                </div>
+                                <div class="menu__detail">
+                                    <h5>Option 3</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
+                                </div>
+                                <div class="menu__detail">
+                                    <h5>Option 4</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-combo3" role="tabpanel" aria-labelledby="pills-combo3-tab">
+                        <div class="menu__item mt-5">
+                            <div class="menu__option">
+                                <div class="menu__detail">
+                                    <h5>Option 1</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
+                                </div>
+                                <div class="menu__detail">
+                                    <h5>Option 2</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
+                                </div>
+                                <div class="menu__detail">
+                                    <h5>Option 3</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
+                                </div>
+                                <div class="menu__detail">
+                                    <h5>Option 4</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-combo4" role="tabpanel" aria-labelledby="pills-combo4-tab">
+                        <div class="menu__item mt-5">
+                            <div class="menu__option">
+                                <div class="menu__detail">
+                                    <h5>Option 1</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
+                                </div>
+                                <div class="menu__detail">
+                                    <h5>Option 2</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
+                                </div>
+                                <div class="menu__detail">
+                                    <h5>Option 3</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
+                                </div>
+                                <div class="menu__detail">
+                                    <h5>Option 4</h5>
+                                    <ol>
+                                        <li>Mực xào dưa cà</li>
+                                        <li>Cá lóc kho tộ</li>
+                                        <li>Trứng chiên hành</li>
+                                        <li>Rau muống xào tỏi</li>
+                                        <li>Đậu hủ sốt thịt bằm</li>
+                                        <li>Canh soup nấu xương</li>
+                                        <li>Cơm trắng</li>
+                                        <li>Tráng miệng, trà đá</li>
+                                    </ol>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="text-center mt-3 btn-style">
+                    <button>See menu</button>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -487,8 +542,33 @@
             <p>
                 Reserving a table beforehand means less waiting. <br> Groups of 8 or more must reserve ahead of time.
             </p>
-            <div class="text-center mt-3">
-                <button>Book now</button>
+            <p>
+            <div class="btn-style">
+                <button data-toggle="collapse" href="#booking" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    Book now
+                </button>
+            </div>
+            </p>
+            <div class="collapse text-left" id="booking">
+                <div class="card card-body">
+                    <div class="form-group">
+                        <label for="">Khách Hàng</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="Nhập họ và tên"
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" name="" id="" class="form-control" placeholder="Nhập email"
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Số Điện Thoại</label>
+                        <input type="tel" name="" id="" class="form-control" placeholder="Nhập số điện thoại"
+                            aria-describedby="helpId">
+                    </div>
+                    <button type="button" class="btn mt-3 booking__btn">Booking</button>
+                </div>
             </div>
         </div>
     </section>
@@ -590,8 +670,8 @@
     <!-- OWL CAROUSEL JS -->
     <script src="../js/owl.carousel.min.js"></script>
 
-    <!-- SLICK JS -->
-    <script src="../js/slick.min.js"></script>
+    <!-- WOW JS -->
+    <script src="../js/wow.min.js"></script>
 
     <!-- MAIN JS -->
     <script src="./js/index.js"></script>

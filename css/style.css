@@ -16,7 +16,13 @@
     --color-white: #fff;
     --color-black: #000;
     --color-text: #4d4d4d;
+    --color-text-1: #171818;
+    --color-bg-1: #fff;
+    --color-bg-2: #f8faff;
+    --color-bg-footer: #151421;
+    --color-btn-form: #fff;
 
+    --color-horizontal: rgba(0, 0, 0, .1);
     --color-prize: #2f89fc;
     --color-overlay: #2ebdc4;
     --color-green: #8FC43E;
@@ -27,6 +33,23 @@
 
     /* ANIMATE CSS */
     --animate-delay: 0.5s;
+}
+
+[data-theme="dark"] {
+    --color-para-font: #666;
+
+    --color-heading: #3f3a64;
+    --color-heading-1: #3f3a64;
+    --color-btn-form: #212831;
+    --color-border-2: #eee;
+
+    --color-bg-1: #151421;
+    --color-bg-2: #100f19;
+    --color-horizontal: rgba(255, 255, 255, 0.1);
+
+    --color-text-1: #fff;
+
+    --layer: rgba(29, 42, 55, 0.8);
 }
 
 /*
@@ -245,6 +268,39 @@ header .navbar-brand img {
     transition: all .5s;
 }
 
+.header__mode {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__mode i {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    color: var(--color-white);
+
+    cursor: pointer;
+    visibility: hidden;
+
+    transition: color .5s;
+}
+
+.header__mode .mode-light.active,
+.header__mode .mode-dark.active {
+    visibility: visible;
+}
+
+.header__mode i:hover {
+    color: var(--color-primary);
+}
+
 .navbar-nav .nav-item:hover .nav-link {
     color: var(--color-primary);
     opacity: 1;
@@ -265,13 +321,21 @@ header .navbar-brand img {
     z-index: 99;
 }
 
-#header.scrolled .nav-link {
-    color: var(--color-black);
+#header.scrolled .nav-link,
+#header.scrolled .header__mode i {
+    color: var(--color-text-1);
 }
 
 #header.scrolled .nav-link.active,
 #header.scrolled .nav-link:hover {
     color: var(--color-primary);
+}
+
+/* Toggle Dark Theme */
+
+#header.dark-theme.scrolled {
+    background-color: var(--color-bg-2);
+    border-bottom: none;
 }
 
 /*
@@ -462,6 +526,54 @@ header .navbar-brand img {
 
 .owl-carousel .owl-dots .owl-dot.active {
     background-color: #b3b3b3;
+}
+
+.owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+}
+
+.owl-carousel .owl-nav {
+    font-size: 50px;
+    color: var(--color-primary);
+    opacity: 0;
+
+    transition: all .25s;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+
+    transition: all .5s;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    left: -30px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    right: -30px;
+}
+
+.owl-carousel .owl-nav .owl-next:focus,
+.owl-carousel .owl-nav .owl-prev:focus {
+    outline: none;
+}
+
+.owl-carousel:hover .owl-nav .owl-prev {
+    left: -60px;
+}
+
+.owl-carousel:hover .owl-nav .owl-next {
+    right: -60px;
+}
+
+.owl-carousel:hover .owl-nav {
+    opacity: 1;
 }
 
 .destination__item:hover .readmore__icon {
@@ -890,7 +1002,7 @@ header .navbar-brand img {
 
 /* ===FOOTER=== */
 footer {
-    background-color: var(--bg-footer);
+    background-color: var(--color-bg-footer);
     color: var(--color-white);
 }
 

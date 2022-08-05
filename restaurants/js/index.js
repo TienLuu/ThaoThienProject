@@ -1,3 +1,7 @@
+/* 
+   INIT SCROLL EVENT
+*/
+//Header
 $(window).scroll(function () {
    if ($(this).scrollTop() > 60) {
       $("#header").addClass("scrolled");
@@ -9,7 +13,6 @@ $(window).scroll(function () {
 /*  
     INIT OWL CAROUSEL
 */
-
 // POPULAR DISHES
 $(".owl-carousel").owlCarousel({
    loop: true,
@@ -24,6 +27,36 @@ $(".owl-carousel").owlCarousel({
    },
 });
 
-$(document).ready(function () {
-   $(".menu__list").slick({});
+/*  
+    INIT WOWJS
+*/
+wow = new WOW({
+   boxClass: "wow", // default
+   animateClass: "animated", // default
+   offset: 0, // default
+   mobile: true, // default
+   live: true, // default
+});
+wow.init();
+
+/* 
+   TOGGLE LIGHT/DARK MODE
+*/
+$(function () {
+   $(".mode-dark").click(function () {
+      $("#data-theme").attr("data-theme", "dark");
+
+      $("#header").addClass("dark-theme");
+
+      $(".mode-dark").removeClass("active");
+      $(".mode-light").addClass("active");
+   });
+   $(".mode-light").click(function () {
+      $("#data-theme").removeAttr("data-theme");
+
+      $("#header").removeClass("dark-theme");
+
+      $(".mode-dark").addClass("active");
+      $(".mode-light").removeClass("active");
+   });
 });
