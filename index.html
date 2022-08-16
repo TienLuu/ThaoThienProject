@@ -71,8 +71,8 @@
                                 Services
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Hotel</a>
-                                <a class="dropdown-item" href="#">Restaurant</a>
+                                <a class="dropdown-item" href="./Hotels/index.html">Hotel</a>
+                                <a class="dropdown-item" href="./restaurants/index.html">Restaurant</a>
                                 <a class="dropdown-item" href="#">Other1</a>
                             </div>
                         </li>
@@ -86,6 +86,10 @@
                             <a class="nav-link nav-menu" href="#">Carrers</a>
                         </li>
                     </ul>
+                    <div class="header__mode">
+                        <i class="fa-solid fa-moon mode-dark active"></i>
+                        <i class="fa-solid fa-sun mode-light"></i>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -136,6 +140,14 @@
                 </div>
             </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </section>
 
 
@@ -489,8 +501,8 @@
         <div class="container">
             <div class="row justify-content-left mb-5 pb-3">
                 <div class="col-md-7">
-                    <span class="subheading">Special Offers</span>
-                    <h2 class="heading">
+                    <span class="subheading wow animate__animated animate__fadeInUp">Special Offers</span>
+                    <h2 class="heading wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
                         <strong>Popular</strong> Hotels & Rooms
                     </h2>
                 </div>
@@ -498,7 +510,7 @@
         </div>
         <div class="container-fluid">
             <div class="hotel-destination">
-                <div class="hotel-item hotel-item1 wow animated">
+                <div class="hotel-item hotel-item1 wow animate__animated animate__slideInUp" data-wow-delay="0.2s">
                     <div class="card-header">
                         <a href="#" class="img"><img src="./Images/xhotel-1.jpg.pagespeed.ic.KgiKvDlwUH.webp"
                                 alt="Hotel 1"></a>
@@ -531,7 +543,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hotel-item hotel-item2 wow animated">
+                <div class="hotel-item hotel-item2  wow animate__animated animate__slideInUp" data-wow-delay="0.3s">
                     <div class="card-header">
                         <a href="#" class="img"><img src="./Images/xhotel-2.jpg.pagespeed.ic.QvVojGaMgS.webp"
                                 alt="Hotel 2"></a>
@@ -563,7 +575,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hotel-item hotel-item3 wow animated">
+                <div class="hotel-item hotel-item3  wow animate__animated animate__slideInUp" data-wow-delay="0.4s">
                     <div class="card-header">
                         <a href="#" class="img"><img src="./Images/xhotel-3.jpg.pagespeed.ic.yYa1xfQlzF.webp"
                                 alt="Hotel 3"></a>
@@ -595,7 +607,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hotel-item hotel-item4 wow animated">
+                <div class="hotel-item hotel-item4 wow animate__animated animate__slideInUp" data-wow-delay="0.5s">
                     <div class="card-header">
                         <a href="#" class="img"><img src="./Images/xhotel-4.jpg.pagespeed.ic.KSjKpvxgch.webp"
                                 alt="Hotel 4"></a>
@@ -627,7 +639,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hotel-item hotel-item5 wow animated">
+                <div class="hotel-item hotel-item5  wow animate__animated animate__slideInUp" data-wow-delay="0.6s">
                     <div class="card-header">
                         <a href="#" class="img"><img src="./Images/xhotel-5.jpg.pagespeed.ic.xzzqlNbwut.webp"
                                 alt="Hotel 5"></a>
@@ -788,11 +800,21 @@
         </div>
     </div>
 
+    <!-- ================ VIDEO =============== -->
+    <section class="video d-flex">
+        <div class="container">
+            <video autoplay muted>
+                <source src="./Images/THAO THIEN 29 6.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </section>
+
     <!-- ================ FEEDBACK =============== -->
     <section class="feedback section">
         <div class="container">
             <div class="row">
-                <div class="col-6 feadback-item wow animated">
+                <div class="col-6 feadback-item  wow animate__animated animate__fadeInLeft">
                     <div class="feedback-title">
                         <span class="subheading">Best Directory Website</span>
                         <h2 class="heading">
@@ -810,7 +832,7 @@
                         <button type="submit" class="btn-feedback">Read more</button>
                     </div>
                 </div>
-                <div class="col-6 feadback-item wow animated">
+                <div class="col-6 feadback-item wow animate__animated animate__fadeInRight">
                     <div class="feedback-title">
                         <span class="subheading">Testimony</span>
                         <h2 class="heading">
@@ -1156,6 +1178,14 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- ================ MAPS =============== -->
+    <section class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.9851422413667!2d107.23499511524174!3d10.964493758691233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174f9f96ea45d85%3A0x75781ed05b5d3364!2zVGjhuqNvIFRoaeG7h24gR2FyZGVu!5e0!3m2!1svi!2s!4v1660144877683!5m2!1svi!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="w-100 h-1500"></iframe>
     </section>
 
     <!-- ================ FOOTER =============== -->
