@@ -90,7 +90,7 @@ a:hover {
 .heading {
     font-size: 30px;
     font-weight: 300;
-    color: #000000;
+    color: var(--color-text-1);
     line-height: 1.5;
 }
 
@@ -100,6 +100,8 @@ a:hover {
 
 .subheading {
     font-size: 14px;
+    color: var(--color-text-1);
+
     display: block;
     margin-bottom: 10px;
 }
@@ -107,6 +109,7 @@ a:hover {
 .heading-section {
     font-size: 30px;
     font-weight: 400;
+    color: var(--color-text-1);
 }
 
 .inner-section {
@@ -405,7 +408,7 @@ header .navbar-brand img {
 =============================================
 */
 .services {
-    background-color: var(--bg-light);
+    background-color: var(--color-bg-2);
 }
 
 .services__item {
@@ -415,7 +418,7 @@ header .navbar-brand img {
     border-radius: 2px;
     margin-bottom: 40px;
 
-    background-color: var(--color-white);
+    background-color: var(--color-bg-1);
     box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 3%);
 
     transition: all .5s;
@@ -430,8 +433,8 @@ header .navbar-brand img {
 
 .services__body h3 {
     font-size: 20px;
-    font-weight: 400;
-    color: var(--color-black);
+    font-weight: 500;
+    color: var(--color-text-1);
     line-height: 1.5;
 
     transition: all .5s;
@@ -439,7 +442,7 @@ header .navbar-brand img {
 
 .services__body p {
     font-size: 16px;
-    color: var(--color-text);
+    color: var(--color-text-1);
 
     transition: all .5s;
 }
@@ -472,10 +475,16 @@ header .navbar-brand img {
                     DESTINATION
 =============================================
 */
+.destination {
+    background-color: var(--color-bg-1);
+}
+
 .destination__item {
     position: relative;
     margin-bottom: 30px;
     border: none;
+
+    color: var(--color-text-1);
 }
 
 .destination__item h4 {
@@ -492,10 +501,9 @@ header .navbar-brand img {
 
 .destination__item .card-body {
     padding: 1em;
-}
-
-.destination__item .card-body {
     border: 1px solid rgba(153, 153, 153, 0.2);
+
+    background-color: var(--color-bg-1);
 }
 
 .owl-carousel .owl-dots {
@@ -592,7 +600,7 @@ header .navbar-brand img {
 =============================================
 */
 .tour {
-    background-color: var(--bg-light);
+    background-color: var(--color-bg-2);
 }
 
 .tour__list {
@@ -607,6 +615,8 @@ header .navbar-brand img {
     border-left: 0;
     border-right: 0;
     border: 1px solid rgba(153, 153, 153, 0.2);
+
+    background-color: var(--color-bg-2);
 }
 
 .tour__item img {
@@ -622,7 +632,7 @@ header .navbar-brand img {
 
 .tour__desc h4 a {
     font-size: 18px;
-    color: var(--color-black);
+    color: var(--color-text-1);
 }
 
 .tour__desc span {
@@ -633,19 +643,20 @@ header .navbar-brand img {
 
 .tour__item .card-text {
     font-size: 14px;
+    color: var(--color-text-1);
     margin-bottom: 1rem;
 }
 
 .tour__item .tour__time {
     font-size: 13px;
-    color: var(--color-text);
+    color: var(--color-text-1);
     margin-bottom: 1rem;
 }
 
 .tour__item .card-footer {
     border-top: 0;
 
-    background-color: var(--color-white);
+    background-color: var(--color-bg-2);
 }
 
 .tour__discover {
@@ -659,6 +670,8 @@ header .navbar-brand img {
 
 .tour__discover p {
     font-size: 14px;
+    color: var(--color-text-1);
+
     margin-bottom: 0;
 }
 
@@ -668,7 +681,7 @@ header .navbar-brand img {
     background-color: #8bc34a;
 
     font-size: 14px;
-    color: var(--color-white);
+    color: var(--color-text-1);
 }
 
 .tour__item .readmore__icon {
@@ -732,14 +745,11 @@ header .navbar-brand img {
     color: rgba(255, 255, 255, 0.7);
 }
 
-
-
-
-
-
-
-
 /* ===HOTEL=== */
+#hotel {
+    background-color: var(--color-bg-1);
+}
+
 .hotel-item hr {
     width: 90%;
     margin: auto;
@@ -766,7 +776,15 @@ header .navbar-brand img {
     justify-content: space-between;
 }
 
-.hotel-title p {
+.hotel-item .card-body h5 {
+    color: var(--color-text-1);
+}
+
+.hotel-item .card-body p {
+    color: var(--color-text-1);
+}
+
+.hotel-item .card-body .hotel-title p {
     color: var(--color-primary);
     font-size: 16px;
     font-weight: 600;
@@ -780,6 +798,10 @@ header .navbar-brand img {
     align-items: center;
     border: 1px solid rgba(153, 153, 153, 0.2);
     border-top: none;
+}
+
+.hotel-item .footer-bot p {
+    color: var(--color-text-1);
 }
 
 .hotel-item .card-footer .footer-bot .btn-hotel {
@@ -810,14 +832,18 @@ header .navbar-brand img {
 }
 
 /* ===video=== */
-.video video{
+.video {
+    background-color: var(--color-bg-2);
+}
+
+.video video {
     width: 100%;
     height: 100%;
 }
 
 /* ===FEEDBACK=== */
 .feedback {
-    background-color: var(--bg-light);
+    background-color: var(--color-bg-1);
 }
 
 .feedback-title {
@@ -827,6 +853,8 @@ header .navbar-brand img {
 .feedback-content {
     width: 85%;
     margin-bottom: 40px;
+
+    color: var(--color-text-1);
 }
 
 .btn-feedback {
@@ -846,7 +874,7 @@ header .navbar-brand img {
 }
 
 .feedback-wrap {
-    background: var(--color-white);
+    background: var(--color-bg-1);
     box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 3%);
     position: relative;
     padding: 30px;
@@ -863,15 +891,20 @@ header .navbar-brand img {
     position: relative;
 }
 
+.feedback-wrap .text .text-top {
+    color: var(--color-text-1);
+}
+
 .feedback-wrap .text .text-bottom {
     margin-top: 40px;
-    color: var(--color-black);
+    color: var(--color-text-1);
     font-weight: 600;
     font-size: 16px;
 }
 
 .feedback-wrap .text .adress {
     font-size: 13px;
+    color: var(--color-text-1);
 }
 
 #carousel-feedback .carousel-item {
@@ -921,9 +954,29 @@ header .navbar-brand img {
 }
 
 /* ===RESTAURANTS=== */
+.rest {
+    background-color: var(--color-bg-2);
+}
+
 .rest-item hr {
     width: 90%;
     margin: auto;
+}
+
+.rest .card-body {
+    /* background-color: var(--color-bg-2); */
+}
+
+.rest .card-body h5 {
+    color: var(--color-text-1);
+}
+
+.rest .card-body p {
+    color: var(--color-text-1);
+}
+
+.rest .footer-bot p {
+    color: var(--color-text-1);
 }
 
 .rest .rest-item:hover .icon {
@@ -936,7 +989,7 @@ header .navbar-brand img {
 
 /* ===BLOG=== */
 .blog {
-    background-color: var(--bg-light);
+    background-color: var(--color-bg-1);
 }
 
 .blog-content {
@@ -948,16 +1001,20 @@ header .navbar-brand img {
 }
 
 .blog .card-body h5 {
-    color: #b3b3b3;
+    color: var(--color-text-1);
     font-size: 14px;
     font-weight: 400;
 }
 
 .blog .card-body a {
-    color: var(--color-black);
+    color: var(--color-text-1);
     font-weight: 600;
     font-size: 18px;
     transition: all 0.5s;
+}
+
+.blog .card-footer p {
+    color: var(--color-text-1);
 }
 
 .blog .card-body a:hover {
@@ -966,10 +1023,18 @@ header .navbar-brand img {
 }
 
 /* ===FAQ=== */
+.FAQ {
+    background-color: var(--color-bg-2);
+}
+
 .FAQ-content {
     width: 80%;
     margin: 50px auto 0;
 
+}
+
+.FAQ-title {
+    color: var(--color-text-1);
 }
 
 .FAQ .card-header .faq-btn {
@@ -985,10 +1050,14 @@ header .navbar-brand img {
 .FAQ .card-header .faq-btn,
 .FAQ .card-body {
     border: none;
+
 }
 
 .FAQ .card-body {
-    margin-bottom: 15px;
+    padding-bottom: 15px;
+    background-color: var(--color-bg-2);
+
+    color: var(--color-text-1);
 }
 
 .FAQ .card-header h2 button {
@@ -1009,6 +1078,12 @@ header .navbar-brand img {
 
 .FAQ .card-header .btn-light.collapsed:focus .icon-faq {
     transform: rotate(0deg);
+}
+
+/* ===MAP=== */
+.map {
+    background-color: var(--color-bg-1);
+    height: 450px;
 }
 
 /* ===FOOTER=== */
