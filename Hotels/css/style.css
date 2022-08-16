@@ -3,7 +3,7 @@
                     GLOBAL
 =============================================
 */
-p{
+p {
     margin: 0;
 }
 
@@ -51,17 +51,21 @@ p{
                     ROOMS
 =============================================
 */
-.rooms{
+.rooms {
     padding: 6em 0;
+    background-color: var(--color-bg-2);
 }
 
-.rooms__title{
+.rooms__title {
+    color: var(--color-text-1);
     text-align: center;
     margin-bottom: 30px;
 }
-.rooms__content .nav-pills{
+
+.rooms__content .nav-pills {
     justify-content: center;
 }
+
 .rooms__content .nav-pills .nav-link {
     color: var(--color-text-1);
     border: 1px solid var(--color-text-1);
@@ -76,33 +80,42 @@ p{
     border-color: var(--color-primary);
     outline: none;
 }
-.rooms__content .tab-content{
+
+.rooms__content .tab-content {
     margin-top: 70px;
 }
 
-.room__dest .room__img{
+.room__dest {
+    color: var(--color-text-1);
+}
+
+.room__dest .room__img {
     width: 380px;
     height: 300px;
     border-radius: 5px;
     transition: all 0.5s;
 }
-.room__dest .room__img img:hover{
+
+.room__dest .room__img img:hover {
     transform: scale(1.1);
 }
 
-.room__dest-title{
+.room__dest-title {
     justify-content: space-between;
     align-items: center;
 }
-.room__dest-feature{
+
+.room__dest-feature {
     justify-content: space-between;
     width: 85%;
     margin-top: 10px;
 }
-.room__dest-title .room-name{
+
+.room__dest-title .room-name {
     font-weight: 700;
 }
-.room__dest-title .room-pricing{
+
+.room__dest-title .room-pricing {
     font-weight: 500;
     font-size: 20px;
     padding: 2px 10px;
@@ -110,42 +123,54 @@ p{
     border-radius: 5px;
     color: var(--color-white);
 }
-.rooms__item{
+
+.rooms__item {
     padding: 20px;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: var(--color-bg-1);
 }
-.room__dest{
+
+.rooms.active .rooms__item {
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 90%)
+}
+
+.room__dest {
     font-size: 16px;
 }
+
 .room__dest .breakfast,
-.room__dest .swing{
+.room__dest .swing {
     color: var(--color-green-blue);
 }
 
-.room__dest .confirm{
+.room__dest .confirm {
     color: rgb(237, 137, 54);
 }
-.room__dest .receipt{
+
+.room__dest .receipt {
     color: var(--color-primary);
 }
-.room__dest i{
+
+.room__dest i {
     font-size: 18px;
 }
-.room__dest hr{
+
+.room__dest hr {
     opacity: 0.5;
 }
 
-.modal .modal-body p{
+.modal .modal-body p {
     font-weight: bold;
 }
 
-.modal .modal-header{
+.modal .modal-header {
     background-color: var(--color-green);
     padding: 10px 1em;
     color: var(--color-white);
 }
-.modal .modal-header button:focus{
+
+.modal .modal-header button:focus {
     outline: none;
 }
