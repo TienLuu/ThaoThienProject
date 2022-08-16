@@ -1,0 +1,31 @@
+.banner {
+    background-image: url(../../Images/xhotel-2.jpg.pagespeed.ic.QvVojGaMgS.webp);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.banner__content {
+    position: absolute;
+    top: 35%;
+    padding-top: 0;
+}
+
+.banner__content h1 {
+    font-size: 60px;
+    font-weight: 200;
+    color: var(--color-white);
+    line-height: 1.2;
+
+    margin-bottom: 24px;
+}
+
+.banner__content h1 strong {
+    font-weight: 700;
+}
+
+.banner__content p {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8);
+}
