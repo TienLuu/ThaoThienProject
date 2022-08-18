@@ -17,7 +17,7 @@ p {
 .banner {
     background-image: url(../../Images/Khách\ sạn\ \(4\).jpg);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
