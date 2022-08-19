@@ -1186,7 +1186,19 @@ footer a {
 footer a:hover {
     text-decoration: none;
     color: var(--color-white);
+}
 
+footer li.email {
+    display: inline-flex;
+    align-items: center;
+}
+
+footer li.email a {
+    display: inline-block;
+    width: 80%;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 footer li {
@@ -1217,7 +1229,7 @@ footer li {
 
 /*
 =============================================
-                    RESPONSIVEe
+                    RESPONSIVE
 =============================================
 */
 @media (max-width: 1500px) {
@@ -1297,6 +1309,11 @@ footer li {
     .rest .card-body h5 {
         font-size: 18px;
     }
+
+    /* FOOTER */
+    footer li.email a {
+        width: 75%;
+    }
 }
 
 @media (max-width:992px) {
@@ -1345,6 +1362,11 @@ footer li {
     .rest-item,
     .blog-item {
         margin-bottom: 20px;
+    }
+
+    /* FOOTER */
+    footer li.email a {
+        width: 100%;
     }
 }
 
