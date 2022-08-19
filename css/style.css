@@ -1242,8 +1242,9 @@ footer li {
     }
 
     /* FEEDBACK */
-    .feedback .carousel-item img {
-        height: 100px;
+    .feedback-wrap .user-img img {
+        width: 6em;
+        height: 6em;
     }
 
     .feedback-wrap {
@@ -1335,8 +1336,9 @@ footer li {
     }
 
     /* FEEDBACK */
-    .feedback .carousel-item img {
-        height: 80px;
+    .feedback-wrap .user-img img {
+        width: 5em;
+        height: 5em;
     }
 
     /* OTHER SECTION */
@@ -1421,8 +1423,8 @@ footer li {
     }
 
     .feedback-wrap .user-img img {
-        width: 5em;
-        height: 5em;
+        width: 7em;
+        height: 7em;
     }
 
     .feedback-wrap .text .adress {
@@ -1487,8 +1489,8 @@ footer li {
 
     /* FEEDBACK  */
     .feedback-wrap .user-img img {
-        width: 7em;
-        height: 7em;
+        width: 5em;
+        height: 5em;
     }
 }
 
