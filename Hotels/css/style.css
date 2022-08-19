@@ -7,8 +7,6 @@ p {
     margin: 0;
 }
 
-
-
 /*
 =============================================
                     BANNER
@@ -18,7 +16,6 @@ p {
     background-image: url(../../Images/Khách\ sạn\ \(4\).jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
 }
 
@@ -176,13 +173,76 @@ p {
     outline: none;
 }
 
-/* ======RESPONSIVE======== */
+/*
+=============================================
+                    RESPONSIVE
+=============================================
+*/
 
-@media (max-width: 1200px){
-    .room__dest-feature{
+@media (max-width: 1200px) {
+
+    /* ROOMS */
+    .room__dest-feature {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
         gap: 5px 0;
     }
-    
+}
+
+@media (max-width:992px) {
+
+    /* BANNER */
+    .banner__content h1 {
+        font-size: 50px;
+    }
+
+    .banner__content p {
+        font-size: 20px;
+    }
+
+    /* ROOMS */
+    .room__dest .room__img {
+        object-fit: cover;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .rooms__body {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* BANNER */
+    .banner__content h1 {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+    .banner__content p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:500px) {
+
+    /* BANNER */
+    .banner__content h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:400px) {
+
+    /* ROOMS */
+    .room__dest .room__img {
+        height: 200px;
+    }
+
+    .room__dest-title .room-pricing {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
 }
