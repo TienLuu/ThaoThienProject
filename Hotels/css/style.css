@@ -187,6 +187,10 @@ p {
         grid-template-columns: 1.5fr 1fr;
         gap: 5px 0;
     }
+
+    .rooms__body {
+        font-size: 14px;
+    }
 }
 
 @media (max-width:992px) {
@@ -223,6 +227,11 @@ p {
     .banner__content p {
         font-size: 16px;
     }
+
+    /* ROOMS */
+    .modal .modal-body p {
+        font-weight: normal;
+    }
 }
 
 
@@ -232,11 +241,20 @@ p {
     .banner__content h1 {
         font-size: 40px;
     }
+
+    /* ROOMS */
+    .room__dest-feature {
+        width: 100%;
+    }
 }
 
 @media (max-width:400px) {
 
     /* ROOMS */
+    .room__dest-feature {
+        grid-template-columns: auto auto;
+    }
+
     .room__dest .room__img {
         height: 200px;
     }
@@ -245,4 +263,6 @@ p {
         font-size: 16px;
         padding: 6px 10px;
     }
+
+
 }
