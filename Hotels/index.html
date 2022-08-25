@@ -8,6 +8,7 @@
     <meta name="description" content="Thảo Thiện Restaurant">
     <meta name="author" content="Thảo Thiện">
     <meta name="keywords" content="Thảo Thiện, Thảo Thiện Restaurants">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Thảo thiện Garden-Thiên đường nghĩ dưỡng</title>
     <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
 
@@ -48,12 +49,15 @@
     <header id="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand" href="#">
                     <img src="../Images/logo.png" alt="Logo Thảo Thiện Graden">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
+                        <i class="fa-solid fa-bars icon-open active"></i>
+                        <i class="fa-solid fa-xmark icon-close"></i>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto">
@@ -71,14 +75,14 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="#">Hotel</a>
                                 <a class="dropdown-item" href="../restaurants/index.html">Restaurant</a>
-                                <a class="dropdown-item" href="#">Other1</a>
+
                             </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-menu" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-menu" href="#">Contact</a>
+                            <a class="nav-link nav-menu" href="../pricing/index.html">Pricing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-menu" href="#">Carrers</a>
@@ -113,28 +117,30 @@
         <div class="container">
             <div class="rooms__title">
                 <h1>Our <span>Rooms</span></h1>
-                <p>Khách sạn Thảo Thiện Garden luôn luôn đáp ứng hoàn hảo nhu cầu nghĩ ngơi của Quý khách <br> và còn
-                    mang đến những phút giây thư giản giải trí tuyệt vời cũng như để lại dư vị ấn tượng trong văn hóa ẩm
-                    thực nơi đây.</p>
+                <p>
+                    Khách sạn Thảo Thiện Garden luôn luôn đáp ứng hoàn hảo nhu cầu nghĩ ngơi của Quý khách <br>
+                    và còn mang đến những phút giây thư giản giải trí tuyệt vời cũng như để lại dư vị ấn tượng trong
+                    vănhóa ẩm thực nơi đây.
+                </p>
             </div>
             <div class="rooms__content">
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item mb-2 mb-md-0" role="presentation">
                         <button class="nav-link active" id="pills-hotel-tab" data-toggle="pill"
                             data-target="#pills-hotel" type="button" role="tab" aria-controls="pills-hotel"
                             aria-selected="true">Hotel</button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item mb-2 mb-md-0" role="presentation">
                         <button class="nav-link" id="pills-homestay-tab" data-toggle="pill"
                             data-target="#pills-homestay" type="button" role="tab" aria-controls="pills-homestay"
                             aria-selected="false">HomeStay</button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item mb-2 mb-md-0" role="presentation">
                         <button class="nav-link" id="pills-bungalow-tab" data-toggle="pill"
                             data-target="#pills-bungalow" type="button" role="tab" aria-controls="pills-bungalow"
                             aria-selected="false">Bungalow</button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item mb-2 mb-md-0" role="presentation">
                         <button class="nav-link" id="pills-dormitory-tab" data-toggle="pill"
                             data-target="#pills-dormitory" type="button" role="tab" aria-controls="pills-dormitory"
                             aria-selected="false">Dormitory</button>
@@ -150,16 +156,16 @@
                         <div class="rooms__item mb-5">
                             <div class="room__dest">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-12 col-lg-4">
                                         <img src="../Images/Superior Double.jpg" alt="Superior Double"
                                             class="img-fluid room__img">
                                     </div>
-                                    <div class="col-8 pl-0">
+                                    <div class="col-12 col-lg-8 pl-lg-0 rooms__body">
                                         <div class="room__dest-title d-flex">
                                             <h4 class="room-name">Superior Double</h4>
-                                            <p class="room-pricing">600.000 đ</p>
+                                            <p class="room-pricing">600.000đ</p>
                                         </div>
-                                        <div class="room__dest-feature d-flex">
+                                        <div class="room__dest-feature">
                                             <p class="user"><i class="las la-user-friends"></i> Tiêu chuẩn 2 người
                                                 <a href="#" data-toggle="modal" data-target="#policy-3"><i
                                                         class="las la-info-circle"></i></a>
@@ -169,8 +175,8 @@
                                             <p class="view"><i class="las la-eye"></i> Hướng trung tâm</p>
                                         </div>
                                         <hr>
-                                        <div class="row">
-                                            <div class="col-4 pr-0">
+                                        <div class="row room__dest-body">
+                                            <div class="col-12 col-sm-6 col-md-4 pr-0 ">
                                                 <p class="policy-2"><a href="#" data-toggle="modal"
                                                         data-target="#policy-2"><i class="las la-info-circle"></i> Chính
                                                         sách hành
@@ -181,21 +187,20 @@
                                                             class="las la-money-bill"></i> Chính sách hoàn hủy</a>
                                                 </p>
                                             </div>
-                                            <div class="col-4">
-
+                                            <div class="col-12 col-sm-6 col-md-4">
                                                 <p class="breakfast"><i class="las la-utensils"></i> Bữa sáng miễn
                                                     phí</p>
                                                 <p class="swing"><i class="las la-swimmer"></i> Hồ bơi miễn
                                                     phí</p>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-12 col-md-4 d-none d-md-block">
                                                 <p class="confirm"><i class="fa fa-bolt"></i> Xác nhận trong 30 phút</p>
                                                 <p class="receipt"><i class="las la-file-invoice"></i> Hỗ trợ xuất Hóa
                                                     đơn</p>
                                             </div>
                                         </div>
                                         <hr>
-                                        <div class="row">
+                                        <div class="row d-none d-md-flex">
                                             <div class="col-4">
                                                 <p><i class="las la-fan"></i> Điều hòa nhiệt độ</p>
                                                 <p><i class="las la-couch"></i> Sofa</p>
@@ -212,6 +217,12 @@
                                                 <p><i class="las la-wifi"></i> Wifi miễn phí</p>
                                             </div>
                                         </div>
+                                        <div class="policy-4 d-md-none">
+                                            <a href="#" data-toggle="modal" data-target="#policy-4" class="text-danger">
+                                                <i class="las la-info-circle"></i>
+                                                Tiện ích
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -219,51 +230,53 @@
                         <div class="rooms__item mb-5">
                             <div class="room__dest">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-12 col-lg-4">
                                         <img src="../Images/superior tripple.jpg" alt="" class="img-fluid room__img">
                                     </div>
-                                    <div class="col-8 pl-0">
+                                    <div class="col-12 col-lg-8 pl-lg-0 rooms__body">
                                         <div class="room__dest-title d-flex">
                                             <h4 class="room-name">Superior Tripple</h4>
-                                            <p class="room-pricing">800.000 đ</p>
+                                            <p class="room-pricing">800.000đ</p>
                                         </div>
-                                        <div class="room__dest-feature d-flex">
+                                        <div class="room__dest-feature">
                                             <p class="user"><i class="las la-user-friends"></i> Tiêu chuẩn 3 người
                                                 <a href="#" data-toggle="modal" data-target="#policy-3"><i
                                                         class="las la-info-circle"></i></a>
                                             </p>
                                             <p class="area"><i class="las la-warehouse"></i> 25m2</p>
                                             <p class="bed"><i class="las la-bed"></i> 2 giường đôi</p>
-                                            <p class="view"><i class="las la-eye"></i> Hướng trung tâm</p>
+                                            <p class="view"><i class="las la-eye"></i> Hướng trung tâm
+                                            </p>
                                         </div>
                                         <hr>
-                                        <div class="row">
-                                            <div class="col-4 pr-0">
+                                        <div class="row room__dest-body">
+                                            <div class="col-12 col-sm-6 col-md-4 pr-0 ">
                                                 <p class="policy-2"><a href="#" data-toggle="modal"
-                                                        data-target="#policy-2"><i class="las la-info-circle"></i> Chính
+                                                        data-target="#policy-2"><i class="las la-info-circle"></i>
+                                                        Chính
                                                         sách hành
                                                         khách</a>
                                                 </p>
                                                 <p class="policy-1">
                                                     <a href="#" data-toggle="modal" data-target="#policy-1"><i
-                                                            class="las la-money-bill"></i> Chính sách hoàn hủy</a>
+                                                            class="las la-money-bill"></i> Chính sách hoàn
+                                                        hủy</a>
                                                 </p>
                                             </div>
-                                            <div class="col-4">
-
+                                            <div class="col-12 col-sm-6 col-md-4">
                                                 <p class="breakfast"><i class="las la-utensils"></i> Bữa sáng miễn
                                                     phí</p>
                                                 <p class="swing"><i class="las la-swimmer"></i> Hồ bơi miễn
                                                     phí</p>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-12 col-md-4 d-none d-md-block">
                                                 <p class="confirm"><i class="fa fa-bolt"></i> Xác nhận trong 30 phút</p>
                                                 <p class="receipt"><i class="las la-file-invoice"></i> Hỗ trợ xuất Hóa
                                                     đơn</p>
                                             </div>
                                         </div>
                                         <hr>
-                                        <div class="row">
+                                        <div class="row d-none d-md-flex">
                                             <div class="col-4">
                                                 <p><i class="las la-fan"></i> Điều hòa nhiệt độ</p>
                                                 <p><i class="las la-couch"></i> Sofa</p>
@@ -279,62 +292,68 @@
                                                 <p><i class="las la-smoking-ban"></i> Không hút thuốc</p>
                                                 <p><i class="las la-wifi"></i> Wifi miễn phí</p>
                                             </div>
+                                        </div>
+                                        <div class="policy-4 d-md-none">
+                                            <a href="#" data-toggle="modal" data-target="#policy-4" class="text-danger">
+                                                <i class="las la-info-circle"></i>
+                                                Tiện ích
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="tab-pane fade" id="pills-homestay" role="tabpanel" aria-labelledby="pills-homestay-tab">
                         <div class="rooms__item mb-5">
                             <div class="room__dest">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-12 col-lg-4">
                                         <img src="../Images/ks.jpg" alt="" class="img-fluid room__img">
                                     </div>
-                                    <div class="col-8 pl-0">
+                                    <div class="col-12 col-lg-8 pl-lg-0 rooms__body">
                                         <div class="room__dest-title d-flex">
                                             <h4 class="room-name">Homestay</h4>
-                                            <p class="room-pricing">2.000.000 đ</p>
+                                            <p class="room-pricing">2.000.000đ</p>
                                         </div>
-                                        <div class="room__dest-feature d-flex">
+                                        <div class="room__dest-feature">
                                             <p class="user"><i class="las la-user-friends"></i> Tiêu chuẩn 4 người
                                                 <a href="#" data-toggle="modal" data-target="#policy-3"><i
                                                         class="las la-info-circle"></i></a>
                                             </p>
                                             <p class="area"><i class="las la-warehouse"></i> 40m2</p>
                                             <p class="bed"><i class="las la-bed"></i> 2 giường đôi</p>
-                                            <p class="view"><i class="las la-eye"></i> Hướng sông lười</p>
+                                            <p class="view"><i class="las la-eye"></i>Hướng sông lười</p>
                                         </div>
                                         <hr>
-                                        <div class="row">
-                                            <div class="col-4 pr-0">
+                                        <div class="row room__dest-body">
+                                            <div class="col-12 col-sm-6 col-md-4 pr-0 ">
                                                 <p class="policy-2"><a href="#" data-toggle="modal"
-                                                        data-target="#policy-2"><i class="las la-info-circle"></i> Chính
+                                                        data-target="#policy-2"><i class="las la-info-circle"></i>
+                                                        Chính
                                                         sách hành
                                                         khách</a>
                                                 </p>
                                                 <p class="policy-1">
                                                     <a href="#" data-toggle="modal" data-target="#policy-1"><i
-                                                            class="las la-money-bill"></i> Chính sách hoàn hủy</a>
+                                                            class="las la-money-bill"></i> Chính sách hoàn
+                                                        hủy</a>
                                                 </p>
                                             </div>
-                                            <div class="col-4">
-
+                                            <div class="col-12 col-sm-6 col-md-4">
                                                 <p class="breakfast"><i class="las la-utensils"></i> Bữa sáng miễn
                                                     phí</p>
                                                 <p class="swing"><i class="las la-swimmer"></i> Hồ bơi miễn
                                                     phí</p>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-12 col-md-4 d-none d-md-block">
                                                 <p class="confirm"><i class="fa fa-bolt"></i> Xác nhận trong 30 phút</p>
                                                 <p class="receipt"><i class="las la-file-invoice"></i> Hỗ trợ xuất Hóa
                                                     đơn</p>
                                             </div>
                                         </div>
                                         <hr>
-                                        <div class="row">
+                                        <div class="row d-none d-md-flex">
                                             <div class="col-4">
                                                 <p><i class="las la-fan"></i> Điều hòa nhiệt độ</p>
                                                 <p><i class="las la-couch"></i> Sofa</p>
@@ -350,6 +369,12 @@
                                                 <p><i class="las la-smoking-ban"></i> Không hút thuốc</p>
                                                 <p><i class="las la-wifi"></i> Wifi miễn phí</p>
                                             </div>
+                                        </div>
+                                        <div class="policy-4 d-md-none">
+                                            <a href="#" data-toggle="modal" data-target="#policy-4" class="text-danger">
+                                                <i class="las la-info-circle"></i>
+                                                Tiện ích
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -360,15 +385,15 @@
                         <div class="rooms__item mb-5">
                             <div class="room__dest">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-12 col-lg-4">
                                         <img src="../Images/H.Yen_3.JPG" alt="" class="img-fluid room__img">
                                     </div>
-                                    <div class="col-8 pl-0">
+                                    <div class="col-12 col-lg-8 pl-lg-0 rooms__body">
                                         <div class="room__dest-title d-flex">
                                             <h4 class="room-name">Bungalow</h4>
-                                            <p class="room-pricing">900.000 đ</p>
+                                            <p class="room-pricing">900.000đ</p>
                                         </div>
-                                        <div class="room__dest-feature d-flex">
+                                        <div class="room__dest-feature">
                                             <p class="user"><i class="las la-user-friends"></i> Tiêu chuẩn 2 người
                                                 <a href="#" data-toggle="modal" data-target="#policy-3"><i
                                                         class="las la-info-circle"></i></a>
@@ -378,32 +403,34 @@
                                             <p class="view"><i class="las la-eye"></i> Hướng hồ bơi</p>
                                         </div>
                                         <hr>
-                                        <div class="row">
-                                            <div class="col-4 pr-0">
+                                        <div class="row room__dest-body">
+                                            <div class="col-12 col-sm-6 col-md-4 pr-0 ">
                                                 <p class="policy-2"><a href="#" data-toggle="modal"
-                                                        data-target="#policy-2"><i class="las la-info-circle"></i> Chính
+                                                        data-target="#policy-2"><i class="las la-info-circle"></i>
+                                                        Chính
                                                         sách hành
                                                         khách</a>
                                                 </p>
                                                 <p class="policy-1">
                                                     <a href="#" data-toggle="modal" data-target="#policy-1"><i
-                                                            class="las la-money-bill"></i> Chính sách hoàn hủy</a>
+                                                            class="las la-money-bill"></i> Chính sách hoàn
+                                                        hủy</a>
                                                 </p>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-12 col-sm-6 col-md-4">
                                                 <p class="breakfast"><i class="las la-utensils"></i> Bữa sáng miễn
                                                     phí</p>
                                                 <p class="swing"><i class="las la-swimmer"></i> Hồ bơi miễn
                                                     phí</p>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-12 col-md-4 d-none d-md-block">
                                                 <p class="confirm"><i class="fa fa-bolt"></i> Xác nhận trong 30 phút</p>
                                                 <p class="receipt"><i class="las la-file-invoice"></i> Hỗ trợ xuất Hóa
                                                     đơn</p>
                                             </div>
                                         </div>
                                         <hr>
-                                        <div class="row">
+                                        <div class="row d-none d-md-flex">
                                             <div class="col-4">
                                                 <p><i class="las la-fan"></i> Điều hòa nhiệt độ</p>
                                                 <p><i class="las la-couch"></i> Sofa</p>
@@ -419,6 +446,12 @@
                                                 <p><i class="las la-smoking-ban"></i> Không hút thuốc</p>
                                                 <p><i class="las la-wifi"></i> Wifi miễn phí</p>
                                             </div>
+                                        </div>
+                                        <div class="policy-4 d-md-none">
+                                            <a href="#" data-toggle="modal" data-target="#policy-4" class="text-danger">
+                                                <i class="las la-info-circle"></i>
+                                                Tiện ích
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -430,15 +463,15 @@
                         <div class="rooms__item mb-5">
                             <div class="room__dest">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-12 col-lg-4">
                                         <img src="../Images/dormitory.jpg" alt="" class="img-fluid room__img">
                                     </div>
-                                    <div class="col-8 pl-0">
+                                    <div class="col-12 col-lg-8 pl-lg-0 rooms__body">
                                         <div class="room__dest-title d-flex">
                                             <h4 class="room-name">Dormitory Room</h4>
-                                            <p class="room-pricing">1.500.000 đ</p>
+                                            <p class="room-pricing">1.500.000đ</p>
                                         </div>
-                                        <div class="room__dest-feature d-flex">
+                                        <div class="room__dest-feature">
                                             <p class="user"><i class="las la-user-friends"></i> Tiêu chuẩn 8 người
                                                 <a href="#" data-toggle="modal" data-target="#policy-3"><i
                                                         class="las la-info-circle"></i></a>
@@ -448,33 +481,34 @@
                                             <p class="view"><i class="las la-eye"></i> Hướng trung tâm</p>
                                         </div>
                                         <hr>
-                                        <div class="row">
-                                            <div class="col-4 pr-0">
+                                        <div class="row room__dest-body">
+                                            <div class="col-12 col-sm-6 col-md-4 pr-0 ">
                                                 <p class="policy-2"><a href="#" data-toggle="modal"
-                                                        data-target="#policy-2"><i class="las la-info-circle"></i> Chính
+                                                        data-target="#policy-2"><i class="las la-info-circle"></i>
+                                                        Chính
                                                         sách hành
                                                         khách</a>
                                                 </p>
                                                 <p class="policy-1">
                                                     <a href="#" data-toggle="modal" data-target="#policy-1"><i
-                                                            class="las la-money-bill"></i> Chính sách hoàn hủy</a>
+                                                            class="las la-money-bill"></i> Chính sách hoàn
+                                                        hủy</a>
                                                 </p>
                                             </div>
-                                            <div class="col-4">
-
+                                            <div class="col-12 col-sm-6 col-md-4">
                                                 <p class="breakfast"><i class="las la-utensils"></i> Bữa sáng miễn
                                                     phí</p>
                                                 <p class="swing"><i class="las la-swimmer"></i> Hồ bơi miễn
                                                     phí</p>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-12 col-md-4 d-none d-md-block">
                                                 <p class="confirm"><i class="fa fa-bolt"></i> Xác nhận trong 30 phút</p>
                                                 <p class="receipt"><i class="las la-file-invoice"></i> Hỗ trợ xuất Hóa
                                                     đơn</p>
                                             </div>
                                         </div>
                                         <hr>
-                                        <div class="row">
+                                        <div class="row d-none d-md-flex">
                                             <div class="col-4">
                                                 <p><i class="las la-fan"></i> Điều hòa nhiệt độ</p>
                                                 <p><i class="las la-couch"></i> Sofa</p>
@@ -491,23 +525,28 @@
                                                 <p><i class="las la-wifi"></i> Wifi miễn phí</p>
                                             </div>
                                         </div>
+                                        <div class="policy-4 d-md-none">
+                                            <a href="#" data-toggle="modal" data-target="#policy-4" class="text-danger">
+                                                <i class="las la-info-circle"></i>
+                                                Tiện ích
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="rooms__item mb-5">
                             <div class="room__dest">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-12 col-lg-4">
                                         <img src="../Images/phòng hội nghị 3.jpg" alt="" class="img-fluid room__img">
                                     </div>
-                                    <div class="col-8 pl-0">
+                                    <div class="col-12 col-lg-8 pl-lg-0 rooms__body">
                                         <div class="room__dest-title d-flex">
                                             <h4 class="room-name">Dormitory Big Room</h4>
-                                            <p class="room-pricing">9.200.000 đ</p>
+                                            <p class="room-pricing">9.200.000đ</p>
                                         </div>
-                                        <div class="room__dest-feature d-flex">
+                                        <div class="room__dest-feature">
                                             <p class="user"><i class="las la-user-friends"></i> Tiêu chuẩn 46 người
                                                 <a href="#" data-toggle="modal" data-target="#policy-3"><i
                                                         class="las la-info-circle"></i></a>
@@ -517,33 +556,34 @@
                                             <p class="view"><i class="las la-eye"></i> Hướng trung tâm</p>
                                         </div>
                                         <hr>
-                                        <div class="row">
-                                            <div class="col-4 pr-0">
+                                        <div class="row room__dest-body">
+                                            <div class="col-12 col-sm-6 col-md-4 pr-0 ">
                                                 <p class="policy-2"><a href="#" data-toggle="modal"
-                                                        data-target="#policy-2"><i class="las la-info-circle"></i> Chính
+                                                        data-target="#policy-2"><i class="las la-info-circle"></i>
+                                                        Chính
                                                         sách hành
                                                         khách</a>
                                                 </p>
                                                 <p class="policy-1">
                                                     <a href="#" data-toggle="modal" data-target="#policy-1"><i
-                                                            class="las la-money-bill"></i> Chính sách hoàn hủy</a>
+                                                            class="las la-money-bill"></i> Chính sách hoàn
+                                                        hủy</a>
                                                 </p>
                                             </div>
-                                            <div class="col-4">
-
+                                            <div class="col-12 col-sm-6 col-md-4">
                                                 <p class="breakfast"><i class="las la-utensils"></i> Bữa sáng miễn
                                                     phí</p>
                                                 <p class="swing"><i class="las la-swimmer"></i> Hồ bơi miễn
                                                     phí</p>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-12 col-md-4 d-none d-md-block">
                                                 <p class="confirm"><i class="fa fa-bolt"></i> Xác nhận trong 30 phút</p>
                                                 <p class="receipt"><i class="las la-file-invoice"></i> Hỗ trợ xuất Hóa
                                                     đơn</p>
                                             </div>
                                         </div>
                                         <hr>
-                                        <div class="row">
+                                        <div class="row d-none d-md-flex">
                                             <div class="col-4">
                                                 <p><i class="las la-fan"></i> Điều hòa nhiệt độ</p>
                                                 <p><i class="las la-couch"></i> Sofa</p>
@@ -559,6 +599,12 @@
                                                 <p><i class="las la-smoking-ban"></i> Không hút thuốc</p>
                                                 <p><i class="las la-wifi"></i> Wifi miễn phí</p>
                                             </div>
+                                        </div>
+                                        <div class="policy-4 d-md-none">
+                                            <a href="#" data-toggle="modal" data-target="#policy-4" class="text-danger">
+                                                <i class="las la-info-circle"></i>
+                                                Tiện ích
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -569,15 +615,15 @@
                         <div class="rooms__item mb-5">
                             <div class="room__dest">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-12 col-lg-4">
                                         <img src="../Images/ks3.jpg" alt="" class="img-fluid room__img">
                                     </div>
-                                    <div class="col-8 pl-0">
+                                    <div class="col-12 col-lg-8 pl-lg-0 rooms__body">
                                         <div class="room__dest-title d-flex">
                                             <h4 class="room-name">Family Room Vip</h4>
-                                            <p class="room-pricing">1.500.000 đ</p>
+                                            <p class="room-pricing">1.500.000đ</p>
                                         </div>
-                                        <div class="room__dest-feature d-flex">
+                                        <div class="room__dest-feature">
                                             <p class="user"><i class="las la-user-friends"></i> Tiêu chuẩn 4 người
                                                 <a href="#" data-toggle="modal" data-target="#policy-3"><i
                                                         class="las la-info-circle"></i></a>
@@ -587,33 +633,34 @@
                                             <p class="view"><i class="las la-eye"></i> Hướng trung tâm</p>
                                         </div>
                                         <hr>
-                                        <div class="row">
-                                            <div class="col-4 pr-0">
+                                        <div class="row room__dest-body">
+                                            <div class="col-12 col-sm-6 col-md-4 pr-0 ">
                                                 <p class="policy-2"><a href="#" data-toggle="modal"
-                                                        data-target="#policy-2"><i class="las la-info-circle"></i> Chính
+                                                        data-target="#policy-2"><i class="las la-info-circle"></i>
+                                                        Chính
                                                         sách hành
                                                         khách</a>
                                                 </p>
                                                 <p class="policy-1">
                                                     <a href="#" data-toggle="modal" data-target="#policy-1"><i
-                                                            class="las la-money-bill"></i> Chính sách hoàn hủy</a>
+                                                            class="las la-money-bill"></i> Chính sách hoàn
+                                                        hủy</a>
                                                 </p>
                                             </div>
-                                            <div class="col-4">
-
+                                            <div class="col-12 col-sm-6 col-md-4">
                                                 <p class="breakfast"><i class="las la-utensils"></i> Bữa sáng miễn
                                                     phí</p>
                                                 <p class="swing"><i class="las la-swimmer"></i> Hồ bơi miễn
                                                     phí</p>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-12 col-md-4 d-none d-md-block">
                                                 <p class="confirm"><i class="fa fa-bolt"></i> Xác nhận trong 30 phút</p>
                                                 <p class="receipt"><i class="las la-file-invoice"></i> Hỗ trợ xuất Hóa
                                                     đơn</p>
                                             </div>
                                         </div>
                                         <hr>
-                                        <div class="row">
+                                        <div class="row d-none d-md-flex">
                                             <div class="col-4">
                                                 <p><i class="las la-fan"></i> Điều hòa nhiệt độ</p>
                                                 <p><i class="las la-couch"></i> Sofa</p>
@@ -629,6 +676,12 @@
                                                 <p><i class="las la-smoking-ban"></i> Không hút thuốc</p>
                                                 <p><i class="las la-wifi"></i> Wifi miễn phí</p>
                                             </div>
+                                        </div>
+                                        <div class="policy-4 d-md-none">
+                                            <a href="#" data-toggle="modal" data-target="#policy-4" class="text-danger">
+                                                <i class="las la-info-circle"></i>
+                                                Tiện ích
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -735,12 +788,50 @@
         </div>
     </div>
 
+    <div class="modal fade" id="policy-4" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Tiện ích</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 text-info">
+                            <p class="confirm"><i class="fa fa-bolt"></i> Xác nhận trong 30 phút</p>
+                            <p class="receipt"><i class="las la-file-invoice"></i> Hỗ trợ xuất Hóa
+                                đơn</p>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <p><i class="las la-fan"></i> Điều hòa nhiệt độ</p>
+                            <p><i class="las la-couch"></i> Sofa</p>
+                            <p><i class="las la-car"></i> Bãi đậu xe lớn</p>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <p><i class="las la-broom"></i> Dọn phòng hằng ngày</p>
+                            <p><i class="las la-door-open"></i> Phòng tắm riêng</p>
+                            <p><i class="las la-bath"></i> Nước nóng lạnh</p>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <p><i class="las la-shuttle-van"></i> Đưa rước xe điện</p>
+                            <p><i class="las la-smoking-ban"></i> Không hút thuốc</p>
+                            <p><i class="las la-wifi"></i> Wifi miễn phí</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- ================ FOOTER =============== -->
     <footer class="section">
         <div class="container">
             <div class="footer-top">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-xl col-md-6 col-lg-3">
                         <div class="footer-heading">
                             <a href="#"><img src="../Images/logo.png" alt="Logo"></a>
                         </div>
@@ -756,7 +847,7 @@
                                     <span><i class="fa-solid fa-phone"></i></span>
                                     <a href="tel:+84977777506" title="Click vào để gọi Hotline">+84 977 777 506</a>
                                 </li>
-                                <li>
+                                <li class="email">
                                     <span><i class="fa-solid fa-envelope"></i></span>
                                     <a href="mailto:sm1.thaothiengarden@gmail.com"
                                         title="Click vào để gửi mail">sm1.thaothiengarden@gmail.com</a>
@@ -770,7 +861,7 @@
                                     class="fab fa-youtube"></i></a>
                         </div>
                     </div>
-                    <div class="col p-0">
+                    <div class="col-xl col-md-6 col-lg-3">
                         <div class="footer-heading heading-2">
                             <h4>Infomation</h4>
                         </div>
@@ -782,7 +873,7 @@
                             <li><a href="">Privacy and Policy</a></li>
                         </ul>
                     </div>
-                    <div class="col p-0">
+                    <div class="col-xl col-md-6 col-lg-3">
                         <div class="footer-heading heading-2">
                             <h4>Customer Support</h4>
                         </div>
@@ -794,7 +885,7 @@
                             <li><a href="">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="col p-0">
+                    <div class="col-xl col-md-6 col-lg-3">
                         <div class="footer-heading heading-2">
                             <h4>Customer Support</h4>
                         </div>

@@ -22,6 +22,9 @@ $(".owl-carousel").owlCarousel({
    nav: true,
    responsive: {
       0: {
+         items: 1,
+      },
+      768: {
          items: 2,
       },
    },
@@ -58,5 +61,17 @@ $(function () {
 
       $(".mode-dark").addClass("active");
       $(".mode-light").removeClass("active");
+   });
+
+   $(".icon-open").click(function () {
+      $("#header").addClass("show");
+      $(".icon-close").addClass("active");
+      $(".icon-open").removeClass("active");
+   });
+
+   $(".icon-close").click(function () {
+      $("#header").removeClass("show");
+      $(".icon-open").addClass("active");
+      $(".icon-close").removeClass("active");
    });
 });
