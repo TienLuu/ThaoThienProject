@@ -30,6 +30,25 @@ $(".owl-carousel").owlCarousel({
    },
 });
 
+//Blog
+$(".owl-blog").owlCarousel({
+   loop: true,
+   margin: 20,
+   nav: true,
+   autoplay: true,
+   responsive: {
+       0: {
+           items: 3
+       },
+       600: {
+           items: 3
+       },
+       1000: {
+           items: 3
+       }
+   }
+});
+
 /*  
     INIT WOWJS
 */
