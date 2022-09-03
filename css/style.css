@@ -999,13 +999,13 @@ header .navbar-brand img {
     opacity: 1;
 }
 
-.carousel-control-next,
-.carousel-control-prev {
+.feedback .carousel-control-next,
+.feedback .carousel-control-prev {
     border: none;
     background-color: transparent;
 }
 
-.carousel-indicators li {
+.feedback .carousel-indicators li {
     background-color: var(--color-text);
     height: 10px;
     width: 10px;
@@ -1013,7 +1013,7 @@ header .navbar-brand img {
     margin-right: 15px;
 }
 
-.carousel-indicators {
+.feedback .carousel-indicators {
     bottom: -50px;
 }
 
