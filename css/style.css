@@ -971,7 +971,7 @@ header .navbar-brand img {
     color: var(--color-text-1);
 }
 
-#carousel-feedback .carousel-item {
+.carousel-item {
     /* animation-name: fadeIn;
     animation-duration: 3s;
     animation-delay: 2s;
@@ -979,8 +979,8 @@ header .navbar-brand img {
     overflow: visible;
 }
 
-#carousel-feedback .carousel-control-prev-icon,
-#carousel-feedback .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     background-image: none;
     color: var(--color-primary);
     font-size: 20px;
@@ -989,23 +989,23 @@ header .navbar-brand img {
     z-index: 100;
 }
 
-#carousel-feedback.carousel:hover .carousel-control-prev-icon {
+.carousel:hover .carousel-control-prev-icon {
     transform: translateX(-60px);
     opacity: 1;
 }
 
-#carousel-feedback.carousel:hover .carousel-control-next-icon {
+.carousel:hover .carousel-control-next-icon {
     transform: translateX(60px);
     opacity: 1;
 }
 
-#carousel-feedback .carousel-control-next,
-#carousel-feedback .carousel-control-prev {
+.feedback .carousel-control-next,
+.feedback .carousel-control-prev {
     border: none;
     background-color: transparent;
 }
 
-#carousel-feedback .carousel-indicators li {
+.feedback .carousel-indicators li {
     background-color: var(--color-text);
     height: 10px;
     width: 10px;
@@ -1013,7 +1013,7 @@ header .navbar-brand img {
     margin-right: 15px;
 }
 
-#carousel-feedback .carousel-indicators {
+.feedback .carousel-indicators {
     bottom: -50px;
 }
 
@@ -1026,9 +1026,12 @@ header .navbar-brand img {
     width: 90%;
     margin: auto;
 }
+.rest-heading{
+    margin-bottom: 10px;
+}
 
 .rest .card-body {
-    /* background-color: var(--color-bg-2); */
+    height: 200px;
 }
 
 .rest .card-body h5 {
@@ -1051,7 +1054,7 @@ header .navbar-brand img {
     margin-top: 70px;
 }
 
-/* ===BLOG=== */
+/* ===BLOG===
 .blog {
     background-color: var(--color-bg-1);
 }
@@ -1072,9 +1075,18 @@ header .navbar-brand img {
 
 .blog .card-body a {
     color: var(--color-text-1);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
     transition: all 0.5s;
+    line-height: 1;
+}
+
+.blog .card-body{
+    height: 170px;
+}
+.blog-heading{
+    margin-bottom: 10px;
+    font-style: italic;
 }
 
 .blog .card-footer p {
@@ -1084,6 +1096,83 @@ header .navbar-brand img {
 .blog .card-body a:hover {
     color: var(--color-primary);
     text-decoration: none;
+} */
+
+/* BLOG */
+/* .blog {
+    background-image: url(../img/bg16.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+} */
+
+
+.blog__item {
+    background-color: #FFEFF3;
+    border-radius: 10px;
+}
+
+.blog__header {
+    position: relative;
+}
+
+.blog__header img {
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+.blog__header p {
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+    background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.blog__body {
+    padding: 30px 15px 20px 15px;
+    text-align: left;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.blog__body h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.blog__footer {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.blog__footer i {
+    color: #F55F8D;
+    font-size: 22px;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+.blog__footer p:first-of-type {
+    margin-right: 20px;
+}
+
+.blog__footer p:first-of-type span {
+    color: #F55F8D;
+}
+
+.blog__footer p{
+    vertical-align: middle;
 }
 
 /* ===FAQ=== */
@@ -1196,14 +1285,18 @@ footer li.email {
 
 footer li.email a {
     display: inline-block;
-    width: 80%;
+    width: 100%;
 
     overflow: hidden;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
 }
 
 footer li {
     margin-bottom: 15px;
+}
+
+.footer-body .address{
+    width: 85%;
 }
 
 .footer-socials i {
@@ -1216,7 +1309,17 @@ footer li {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 50%;
+    transition: all 0.5s;
+    color: #ffffff;
 }
+
+.footer-socials .fb:hover{
+    color: #3B5998;
+}
+.footer-socials .yt:hover{
+    color: #FF0000;
+}
+
 
 .footer-bottom {
     margin-top: 50px;
