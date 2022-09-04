@@ -1234,6 +1234,28 @@ footer li {
     color: var(--color-green);
 }
 
+/* BACK TOP TOP */
+.backtotop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: #ffffff;
+    background-color: #F55F8D;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
 /*
 =============================================
                     RESPONSIVE
