@@ -33,11 +33,23 @@
 =============================================
 */
 .banner {
-    background-image: url(../../Images/HomeImg-m2WWR5EDrgTbbJjy.webp);
+    background-image: url(../../Images/hamruou.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    position: relative;
+}
+
+.banner::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    position: absolute;
+    opacity: 0.5;
 }
 
 .banner__content {
