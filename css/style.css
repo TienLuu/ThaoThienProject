@@ -81,10 +81,12 @@ li {
 
 a {
     text-decoration: none;
+    color: var(--color-black);
 }
 
 a:hover {
     text-decoration: none;
+    color: var(--color-black);
 }
 
 .heading {
@@ -231,8 +233,18 @@ a:hover {
     border: none;
 }
 
-.section {
-    padding: 6em 0;
+.modal .modal-body p {
+    font-weight: bold;
+}
+
+.modal .modal-header {
+    background-color: var(--color-green);
+    padding: 10px 1em;
+    color: var(--color-white);
+}
+
+.modal .modal-header button:focus {
+    outline: none;
 }
 
 /*
@@ -670,10 +682,6 @@ header .navbar-brand img {
     background-color: var(--color-bg-2);
 }
 
-.tour__list {
-    /* padding: 0 4em; */
-}
-
 .tour__item.card {
     border: none;
 }
@@ -1033,10 +1041,6 @@ header .navbar-brand img {
     margin: auto;
 }
 
-.rest .card-body {
-    /* background-color: var(--color-bg-2); */
-}
-
 .rest .card-body h5 {
     color: var(--color-text-1);
 }
@@ -1150,6 +1154,12 @@ header .navbar-brand img {
     transform: rotate(0deg);
 }
 
+.FAQ .card-header{
+border-left: 5px solid var(--color-green);
+border-radius: 5px !important;
+
+}
+
 /* ===MAP=== */
 .map {
     background-color: var(--color-bg-1);
@@ -1202,10 +1212,10 @@ footer li.email {
 
 footer li.email a {
     display: inline-block;
-    width: 80%;
+    width: 100%;
 
     overflow: hidden;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
 }
 
 footer li {

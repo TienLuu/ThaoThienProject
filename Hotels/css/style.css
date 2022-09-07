@@ -13,7 +13,7 @@ p {
 =============================================
 */
 .banner {
-    background-image: url(../../Images/Khách\ sạn\ \(4\).jpg);
+    background-image: url(../../Images/xbig_image_1.jpg.pagespeed.ic.5s09Wzh_9t.webp);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -159,7 +159,7 @@ p {
     opacity: 0.5;
 }
 
-.modal .modal-body p {
+/* .modal .modal-body p {
     font-weight: bold;
 }
 
@@ -171,7 +171,7 @@ p {
 
 .modal .modal-header button:focus {
     outline: none;
-}
+} */
 
 /*
 =============================================
