@@ -682,10 +682,6 @@ header .navbar-brand img {
     background-color: var(--color-bg-2);
 }
 
-.tour__list {
-    /* padding: 0 4em; */
-}
-
 .tour__item.card {
     border: none;
 }
@@ -1045,10 +1041,6 @@ header .navbar-brand img {
     margin: auto;
 }
 
-.rest .card-body {
-    /* background-color: var(--color-bg-2); */
-}
-
 .rest .card-body h5 {
     color: var(--color-text-1);
 }
@@ -1220,10 +1212,10 @@ footer li.email {
 
 footer li.email a {
     display: inline-block;
-    width: 80%;
+    width: 100%;
 
     overflow: hidden;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
 }
 
 footer li {
