@@ -13,7 +13,7 @@ p {
 =============================================
 */
 .banner {
-    background-image: url(../../Images/xbig_image_1.jpg.pagespeed.ic.5s09Wzh_9t.webp);
+    background-image: url(../../Images/16.jpg.webp);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -159,19 +159,40 @@ p {
     opacity: 0.5;
 }
 
-/* .modal .modal-body p {
-    font-weight: bold;
+/* BOOKING */
+.booking{
+    padding: 8em 0;
+    background-image: url(../../Images/superior-tripple.JPG);
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 50px;
 }
-
-.modal .modal-header {
-    background-color: var(--color-green);
-    padding: 10px 1em;
-    color: var(--color-white);
-}
-
-.modal .modal-header button:focus {
-    outline: none;
+/* .booking .display{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.3;
+    z-index: 1;
 } */
+
+.booking .content{
+    text-align: center;
+    z-index: 100;
+}
+
+.booking .booking-hotel{
+    padding: 25px 70px;
+    background-color: var(--color-primary);
+    font-size: 20px;
+    color: var(--color-white);
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 101;
+}
 
 /*
 =============================================
