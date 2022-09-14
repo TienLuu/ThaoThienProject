@@ -162,7 +162,7 @@ p {
 /* BOOKING */
 .booking{
     padding: 8em 0;
-    background-image: url(../../Images/superior-tripple.JPG);
+    background-image: url(../../Images/h1_hero.jpg.webp);
     background-attachment: fixed;
     position: relative;
     margin-bottom: 50px;
@@ -192,6 +192,11 @@ p {
     border-radius: 50px;
     cursor: pointer;
     z-index: 101;
+    transition: all 0.5s;
+}
+
+.booking .booking-hotel:hover{
+    filter: brightness(0.9);
 }
 
 /*
@@ -233,7 +238,10 @@ p {
     }
 
     .rooms__body {
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .modal{
+        padding-right: 0!important;
     }
 }
 
@@ -253,6 +261,9 @@ p {
     .modal .modal-body p {
         font-weight: normal;
     }
+    .modal{
+        padding-right: 0!important;
+    }
 }
 
 
@@ -266,6 +277,13 @@ p {
     /* ROOMS */
     .room__dest-feature {
         width: 100%;
+    }
+    .modal{
+        padding-right: 0!important;
+    }
+
+    .modal .modal-dialog{
+        padding: 0 auto;
     }
 }
 
