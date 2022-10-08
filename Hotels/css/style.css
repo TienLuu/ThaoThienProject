@@ -82,7 +82,8 @@ p {
     margin-top: 70px;
 }
 
-.room__dest {
+.room__dest,
+.room__dest a {
     color: var(--color-text-1);
 }
 
@@ -169,7 +170,7 @@ p {
     background-image: url(../../Images/h1_hero.jpg.webp);
     background-attachment: fixed;
     position: relative;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 /* .booking .display{
     position: absolute;
