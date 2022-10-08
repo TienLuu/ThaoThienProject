@@ -159,6 +159,10 @@ p {
     opacity: 0.5;
 }
 
+.room__dest-body a:hover{
+    color: var(--color-primary);
+}
+
 /* BOOKING */
 .booking{
     padding: 8em 0;
